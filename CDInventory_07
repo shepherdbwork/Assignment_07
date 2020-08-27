@@ -214,7 +214,7 @@ while True:
     # 3.2 process load inventory
     if strChoice == 'l':
         print('WARNING: If you continue, all unsaved data will be lost and the Inventory re-loaded from file.')
-        strYesNo = input('type \'yes\' to continue and reload from file. otherwise reload will be canceled')
+        strYesNo = input('type \'yes\' to continue and reload from file. otherwise reload will be canceled: ')
         if strYesNo.lower() == 'yes':
             print('reloading...')
             FileProcessor.read_file(strFileName, lstTbl)
